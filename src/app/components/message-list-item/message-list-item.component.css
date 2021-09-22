@@ -1,0 +1,35 @@
+.message-list-item {
+  flex-grow: 1;
+  padding: 10px;
+  position: relative;
+}
+.wrapper:hover {
+  background-color: #A8DADC;
+  color: #1d3557;
+}
+p {
+  width: 350px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.notification {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  background-color: #457b9d;
+  position: absolute;
+  margin-left: 10px;
+  top: 17px;
+}
+.icon > span {
+  margin-right: 10px;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #1d3557;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
