@@ -1,0 +1,19 @@
+.link {
+  border: 1px solid #1d3557;
+  padding: 8px 10px;
+}
+span {
+  padding: 5px 8px;
+  background-color: #1d3557;
+  color: #f1faee;
+  cursor: pointer;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+span:hover {
+  transform: scale(0.98);
+}
