@@ -22,7 +22,7 @@ export class UserService {
     return this.http.post(`${this.apiUrl}user/`, user, options);
   }
   verifyIsLoggedIn(): boolean {
-    const user = localStorage.getItem('user');
+    const user = localStorage.getItem('currentUser');
     return user != null;
   }
   getLoggedInUser(): Observable<any> {

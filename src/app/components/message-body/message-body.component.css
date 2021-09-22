@@ -1,0 +1,14 @@
+.message-body {
+  padding: 0px 20px;
+  text-align: left;
+  position: relative;
+}
+h2 {
+  margin-bottom: 15px;
+  color: #1D3557;
+}
+span {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+}

@@ -1,7 +1,7 @@
-<div class="new-message">
+<div class="center">
   <app-avatar></app-avatar>
   <h3>send anonymous message to Nkwelle Kevin</h3>
-  <textarea name="message" id="message" cols="30" rows="10"></textarea>
-  <app-button text='Send'></app-button>
-  <app-button text="Login/Register"></app-button>
+  <textarea name="message" id="message" cols="20" [ngClass]="error?'error':''" [(ngModel)]="message" rows="10"></textarea>
+  <app-button text='Send' btn_class='btn-block' (btnClick)="saveMessage()"></app-button>
+  <a routerLink="" routerLinkActive="active">Don't have an account ? signup to get started</a>
 </div>

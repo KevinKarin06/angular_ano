@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Message } from 'src/app/Model/Message';
+import { MessageService } from 'src/app/services/message.service';
 
 @Component({
   selector: 'app-message-list',
@@ -6,15 +8,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./message-list.component.css'],
 })
 export class MessageListComponent implements OnInit {
-  list = [1, 3, 4, 5, 6, 6, 7, 8, 9, 0, 11, 23, 34, 4];
-  constructor() {}
-  view = false;
-  selected = '';
+  messages!: Message[];
+  selected!: Message;
+  constructor(private messageService: MessageService) {}
 
-  ngOnInit(): void {}
-  handleItemClick() {
-    console.log('change view');
-    this.view = true;
-    this.selected = 'new selected item';
+  ngOnInit(): void {
+    this.messageService.getUserMessage().subscribe((res) => {
+      if (res.data != null) {
+        this.messages = res.data;
+        console.log(this.messages);
+      }
+    });
+  }
+  handleItemClick(message: Message) {
+    this.selected = message;
+    message.read = true;
+    this.messageService.update(this.selected).subscribe((res) => {
+      console.log('update', res);
+    });
   }
 }

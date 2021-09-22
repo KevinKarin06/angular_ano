@@ -1,4 +1,5 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { Message } from 'src/app/Model/Message';
 
 @Component({
   selector: 'app-message-list-item',
@@ -7,10 +8,11 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class MessageListItemComponent implements OnInit {
   @Output() itemClick = new EventEmitter();
+  @Input() message!: Message;
   constructor() {}
 
   ngOnInit(): void {}
   onClick() {
-    this.itemClick.emit('msg');
+    this.itemClick.emit(this.message);
   }
 }

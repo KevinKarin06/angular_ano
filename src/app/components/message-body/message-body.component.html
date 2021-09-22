@@ -1,2 +1,5 @@
-<p>message-body works!</p>
-{{text}}
+<div *ngIf="message" class="message-body">
+  <h2>{{message.user}}</h2>
+  <p>{{message.message}}</p>
+  <span>{{message.createdAt}}</span>
+</div>

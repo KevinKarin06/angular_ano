@@ -1,12 +1,24 @@
-.message-list{
+.message-list {
   padding: 15px 5px;
   width: 100%;
   overflow-y: scroll;
   /* height: 90%; */
   max-height: 70vh;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
 }
-h2{
+h2 {
   text-align: center;
   font-weight: bold;
+}
+#list-item {
+  max-height: 70vh;
+  overflow-y: scroll;
+  width: 50%;
+}
+#message-body{
+  width: 50%;
+  padding: 0px 10px;
 }

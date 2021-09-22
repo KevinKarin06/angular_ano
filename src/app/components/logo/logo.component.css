@@ -1,11 +1,11 @@
 .logo {
   height: 200px;
-  width: 300px;
+  /* width: 300px; */
   background-image: url("../../../assets/logo.svg");
   background-size: cover;
 }
 h3{
   text-align: center;
-  padding: 5px 0px;
+  padding: 10px 0px;
   color: #1D3557;
 }

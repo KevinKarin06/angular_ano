@@ -1,7 +1,11 @@
 <h2>Messages</h2>
 <div class="message-list">
-  <app-message-list-item *ngFor="let item of list" (itemClick)="handleItemClick()">
-  </app-message-list-item>
-  <!-- <app-message-body *ngIf="view" [text]="selected">
-  </app-message-body> -->
+  <div id="list-item">
+    <app-message-list-item *ngFor="let message of messages" [message]=message (itemClick)="handleItemClick($event)">
+    </app-message-list-item>
+  </div>
+  <div id="message-body">
+    <app-message-body [message]="selected">
+    </app-message-body>
+  </div>
 </div>

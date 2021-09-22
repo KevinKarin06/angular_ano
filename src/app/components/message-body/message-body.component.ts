@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Message } from 'src/app/Model/Message';
 
 @Component({
   selector: 'app-message-body',
@@ -6,8 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./message-body.component.css'],
 })
 export class MessageBodyComponent implements OnInit {
-  @Input() text!: string;
+  @Input() message!: Message;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log('message-body', this.message);
+  }
 }

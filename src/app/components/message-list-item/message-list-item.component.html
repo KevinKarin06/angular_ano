@@ -1,10 +1,11 @@
 <div class="wrapper" (click)="onClick()">
   <div class="message-list-item">
-    <h3>User89800 <span class="notification"></span></h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui molestias placeat</p>
-    <span>29/09/2021</span>
+    <h3>{{message.user}}<span *ngIf="!message.read" class="notification"></span></h3>
+    <p>{{message.message}}</p>
+    <span>{{message.createdAt}}</span>
+    <a routerLink="message/view" routerLinkActive="active">test</a>
   </div>
   <div class="icon">
-    <mat-icon aria-label="arrow_icon">arrow_forward_ios</mat-icon>
+    <!-- <mat-icon aria-label="arrow_icon">arrow_forward_ios</mat-icon> -->
   </div>
 </div>
