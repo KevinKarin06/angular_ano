@@ -1,0 +1,11 @@
+.new-message {
+  height: 70vh;
+  width: 60vh;
+  margin: 0 auto;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
