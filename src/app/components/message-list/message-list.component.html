@@ -2,6 +2,6 @@
 <div class="message-list">
   <app-message-list-item *ngFor="let item of list" (itemClick)="handleItemClick()">
   </app-message-list-item>
-  <app-message-body *ngIf="view" [text]="selected" [ngStyle]="{'z-index':-1,'transform':'translateX(-1000vh)','color':'red'}">
-  </app-message-body>
+  <!-- <app-message-body *ngIf="view" [text]="selected">
+  </app-message-body> -->
 </div>

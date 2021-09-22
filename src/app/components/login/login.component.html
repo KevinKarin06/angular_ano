@@ -1,0 +1,10 @@
+<div class="center">
+  <app-logo></app-logo>
+  <form (ngSubmit)="onSubmit()">
+    <input type="text" [ngClass]="nameError?'error':''" [(ngModel)]="name" name="name" id="name" placeholder="Name">
+    <input type="text" [ngClass]="phoneError?'error':''" [(ngModel)]="phone" name="phone" id="phone"
+      placeholder="Phone">
+    <app-button btn_class="btn-block" text="Login"></app-button>
+  </form>
+  <a routerLink="/register" routerLinkActive="active">Don't have an account yet ? signup to get started</a>
+</div>

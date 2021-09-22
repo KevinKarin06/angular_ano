@@ -15,6 +15,42 @@ body {
   overflow: hidden;
   border: 1px solid steelblue;
   height: 100%;
-  padding: 30px;
+  padding: 20px;
   max-height: 100vh;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.center {
+  /* height: 80vh; */
+  width: 60vh;
+  margin: 0px auto;
+  border: 1px solid #457B9D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px;
+}
+.btn-block{
+  width: 100%;
+  display: block;
+}
+input[type=text]:focus {
+  background-color: #A8DADC;
+}
+input[type=text]:focus {
+  border: 2px solid #1D3557;
+}
+input{
+  outline: none;
+}
+input{
+  width: 100%;
+  margin: 10px auto;
+  padding: 15px;
+}
+.error{
+  border: 2px solid #E63946;
 }

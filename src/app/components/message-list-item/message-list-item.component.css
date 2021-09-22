@@ -20,16 +20,17 @@ p {
   background-color: #457b9d;
   position: absolute;
   margin-left: 10px;
-  top: 17px;
+  top: 14px;
 }
 .icon > span {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid #1d3557;
   cursor: pointer;
   transition: all 0.5s ease;
+  padding: 10px;
 }
