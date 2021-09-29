@@ -68,6 +68,7 @@ input[type="text"]:focus {
 }
 input {
   outline: none;
+  margin: 5px;
 }
 input {
   width: 100%;
@@ -95,5 +96,26 @@ a {
 }
 span{
   font-size: 0.7rem;
+}
+input,textarea{
+  border: 1px solid #1d3557;
+}
+.btn {
+  display: inline-block;
+  background: #1d3557;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px 0px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  transform: scale(0.98);
 }
 

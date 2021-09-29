@@ -15,6 +15,7 @@ export class LinkComponent implements OnInit {
   }
 
   handleCopyClick() {
+    navigator.clipboard.writeText(this.link);
     console.log('copy to clipboard');
   }
   logout() {

@@ -19,4 +19,7 @@ export class MessageService {
   update(message: Message): Observable<any> {
     return this.http.put(`${this.apiUrl}message/${message.id}`, message);
   }
+  newMessage(message: Message): Observable<any> {
+    return this.http.post(`${this.apiUrl}message/`, message);
+  }
 }

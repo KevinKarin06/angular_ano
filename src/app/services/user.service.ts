@@ -29,8 +29,11 @@ export class UserService {
     const id = localStorage.getItem('currentUser');
     return this.http.get(`${this.apiUrl}user/${id}`, options);
   }
+  getUser(id: any): Observable<any> {
+    return this.http.get(`${this.apiUrl}user/${id}`, options);
+  }
   getUserUrl() {
-    return `${location.origin}/${localStorage.getItem('currentUser')}`;
+    return `${location.origin}/message/${localStorage.getItem('currentUser')}`;
   }
   logOut() {
     localStorage.removeItem('currentUser');
