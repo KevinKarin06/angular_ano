@@ -4,7 +4,11 @@
   position: relative;
 }
 .wrapper:hover {
-  background-color: #A8DADC;
+  background-color: #a8dadc;
+  color: #1d3557;
+}
+.selected{
+  background-color: #a8dadc;
   color: #1d3557;
 }
 p {
@@ -15,7 +19,7 @@ p {
   padding: 5px 0px;
   font-size: 1.1rem;
 }
-h3{
+h3 {
   margin-bottom: 3px;
 }
 .notification {
@@ -39,7 +43,9 @@ h3{
   transition: all 0.5s ease;
   padding: 10px;
 }
-span{
+span {
   font-size: 0.8rem;
 }
-
+.wrapper:active {
+  background-color: #a8dadc;
+}

@@ -13,6 +13,7 @@ export class MessageListItemComponent implements OnInit {
 
   ngOnInit(): void {}
   onClick() {
+    // this.selected=!this.selected;
     this.itemClick.emit(this.message);
   }
 }

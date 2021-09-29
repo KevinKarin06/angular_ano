@@ -1,11 +1,12 @@
 <h2>Messages</h2>
 <div class="message-list">
   <div id="list-item">
-    <app-message-list-item *ngFor="let message of messages" [message]=message (itemClick)="handleItemClick($event)">
+    <app-message-list-item *ngFor="let message of messages" [message]=message
+      (itemClick)="handleItemClick($event)">
     </app-message-list-item>
   </div>
   <div id="message-body">
-    <app-message-body [message]="selected">
+    <app-message-body [message]="selectedMessage">
     </app-message-body>
   </div>
 </div>

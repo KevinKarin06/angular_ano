@@ -1,4 +1,5 @@
 export interface Message {
+  selected?: boolean;
   id?: number;
   message: string;
   user?: string;

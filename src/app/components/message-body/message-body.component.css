@@ -6,10 +6,20 @@
 }
 h2 {
   margin-bottom: 15px;
-  color: #1D3557;
+  color: #1d3557;
 }
 span {
   position: absolute;
   bottom: 0px;
   right: 10px;
+}
+.no-selected > h2 {
+  text-align: center;
+}
+.no-selected {
+  position: absolute;
+  top: 50%;
+  left:75%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }

@@ -3,3 +3,6 @@
   <p>{{message.message}}</p>
   <span>{{message.createdAt}}</span>
 </div>
+<div *ngIf="!message" class='no-selected'>
+  <h2>No Message Selected</h2>
+</div>
