@@ -1,6 +1,6 @@
 .message-list-item {
   flex-grow: 1;
-  padding: 10px;
+  /* padding: 10px; */
   position: relative;
 }
 .wrapper:hover {
@@ -12,7 +12,7 @@
   color: #1d3557;
 }
 p {
-  width: 350px;
+  width: 300px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

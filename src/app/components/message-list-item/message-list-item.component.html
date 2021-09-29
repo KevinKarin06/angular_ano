@@ -1,6 +1,6 @@
 <div class="wrapper" [ngClass]="message.selected?'selected':''" (click)="onClick()">
   <div class="message-list-item">
-    <h3>{{message.user}}<span *ngIf="!message.read" class="notification"></span></h3>
+    <h2>{{message.user}}<span *ngIf="!message.read" class="notification"></span></h2>
     <p>{{message.message}}</p>
     <span>{{message.createdAt}}</span>
     <!-- <a routerLink="message/view" routerLinkActive="active">test</a> -->

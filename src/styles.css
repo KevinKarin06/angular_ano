@@ -29,9 +29,7 @@ body {
 }
 
 .center {
-  /* height: 80vh; */
   width: 60vh;
-  margin: 10vh auto;
   border: 1px solid #457b9d;
   display: flex;
   flex-direction: column;
@@ -40,7 +38,7 @@ body {
   padding: 25px;
   position: absolute;
   top: 50%;
-  left:75%;
+  left:50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   /* background-color: #A8DADC; */
@@ -98,6 +96,4 @@ a {
 span{
   font-size: 0.7rem;
 }
-p{
-  line-height: 1.3rem;
-}
+

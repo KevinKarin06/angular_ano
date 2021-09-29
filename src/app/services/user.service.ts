@@ -30,7 +30,7 @@ export class UserService {
     return this.http.get(`${this.apiUrl}user/${id}`, options);
   }
   getUserUrl() {
-    return `${this.apiUrl}${localStorage.getItem('currentUser')}`;
+    return `${location.origin}/${localStorage.getItem('currentUser')}`;
   }
   logOut() {
     localStorage.removeItem('currentUser');

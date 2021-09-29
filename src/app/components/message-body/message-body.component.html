@@ -1,7 +1,7 @@
 <div *ngIf="message" class="message-body">
-  <h2>{{message.user}}</h2>
+  <h2>Message From : {{message.user}}</h2>
+  <!-- <span>{{message.createdAt}}</span> -->
   <p>{{message.message}}</p>
-  <span>{{message.createdAt}}</span>
 </div>
 <div *ngIf="!message" class='no-selected'>
   <h2>No Message Selected</h2>
