@@ -7,7 +7,7 @@
   background-color: #a8dadc;
   color: #1d3557;
 }
-.selected{
+.selected {
   background-color: #a8dadc;
   color: #1d3557;
 }
@@ -44,8 +44,15 @@ h3 {
   padding: 10px;
 }
 span {
-  font-size: 0.8rem;
+  margin: 7px 0px;
+  cursor: pointer;
+  font-size: 0.9em;
+  padding: 10px;
+  transition: all .5s ease;
 }
-.wrapper:active {
-  background-color: #a8dadc;
+span:hover{
+ transform: scale(1);
+}
+span:active {
+  transform: scale(0.98);
 }

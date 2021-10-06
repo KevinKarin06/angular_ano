@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Message } from 'src/app/Model/Message';
+import { Message } from 'src/app/Interface/Message';
 import { MessageService } from 'src/app/services/message.service';
 
 @Component({
@@ -46,5 +46,16 @@ export class MessageListComponent implements OnInit {
       item.selected = false;
       return item;
     });
+  }
+  deleteAll() {
+    this.messages.forEach(
+      (message: Message, index: number, array: Message[]) => {
+        this.messageService.delete(message).subscribe((res) => {
+          console.log('deleted', res);
+        });
+      }
+    );
+    this.messages=[];
+    // this.selectedMessage = undefined;
   }
 }

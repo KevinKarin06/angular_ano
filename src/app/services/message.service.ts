@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Message } from '../Model/Message';
+import { Message } from '../Interface/Message';
 import { UserService } from './user.service';
 
 @Injectable({
@@ -18,6 +18,9 @@ export class MessageService {
   }
   update(message: Message): Observable<any> {
     return this.http.put(`${this.apiUrl}message/${message.id}`, message);
+  }
+  delete(message: Message): Observable<any> {
+    return this.http.delete(`${this.apiUrl}message/${message.id}`);
   }
   newMessage(message: Message): Observable<any> {
     return this.http.post(`${this.apiUrl}message/`, message);

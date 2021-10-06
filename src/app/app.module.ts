@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LogoComponent } from './components/logo/logo.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
+import { ToastComponent } from './components/toast/toast.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { HomeComponent } from './components/home/home.component';
     RegisterComponent,
     LogoComponent,
     HomeComponent,
+    ToastComponent,
   ],
   imports: [
     BrowserModule,

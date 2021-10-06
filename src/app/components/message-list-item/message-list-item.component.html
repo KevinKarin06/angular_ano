@@ -1,3 +1,4 @@
+<span (click)="deleteAll()">Delete All</span>
 <div class="wrapper" [ngClass]="message.selected?'selected':''" (click)="onClick()">
   <div class="message-list-item">
     <h2>{{message.user}}<span *ngIf="!message.read" class="notification"></span></h2>

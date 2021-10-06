@@ -1,5 +1,5 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-import { User } from 'src/app/Model/User';
+import { User } from 'src/app/Interface/User';
 import { UserService } from 'src/app/services/user.service';
 
 @Component({

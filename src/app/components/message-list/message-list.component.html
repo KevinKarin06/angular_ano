@@ -2,7 +2,7 @@
 <div class="message-list">
   <div id="list-item">
     <app-message-list-item *ngFor="let message of messages" [message]=message
-      (itemClick)="handleItemClick($event)">
+      (itemClick)="handleItemClick($event)" (onDeleteAll)="deleteAll()">
     </app-message-list-item>
   </div>
   <div id="message-body">
